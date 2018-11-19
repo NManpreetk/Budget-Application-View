@@ -1,0 +1,42 @@
+﻿@model List<BudgetApplicationView.Models.ViewHouseHoldViewModel>
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Households</h2>
+<p>Find below the list of households that you have created</p>
+@if (Model == null || !Model.Any())
+{
+    <p>You haven't created any households</p>
+}
+else
+{
+    <table>
+        <thead>
+            <tr>
+                Name
+            </tr>
+            <tr>
+                Number of Members
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var household in Model)
+            {
+                <tr>
+                    <td>
+                        @household.Name
+                    </td>
+                    <td>
+                        @household.NumberOfUsers
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = household.Id }) |
+                        @Html.ActionLink("View Members", "ViewUsersInHouseHold", new { id = household.Id })|
+                        @Html.ActionLink("Invite", "Invite", new { id = household.Id })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
