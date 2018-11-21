@@ -32,7 +32,10 @@ else
                     <td>
                         @Html.ActionLink("Edit", "Edit", new { id = household.Id }) |
                         @Html.ActionLink("View Members", "ViewUsersInHouseHold", new { id = household.Id })|
-                        @Html.ActionLink("Invite", "Invite", new { id = household.Id })
+                        @Html.ActionLink("Invite", "Invite", new { id = household.Id })|
+                        @Html.ActionLink("Categories", "CreateCategories", new { id = household.Id }) |
+                        @Html.ActionLink("Accounts", "CreateAccounts", new { id = household.Id })|
+
                     </td>
                 </tr>
             }

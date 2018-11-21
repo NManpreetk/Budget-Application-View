@@ -118,3 +118,9 @@ C:\Users\SD05\Documents\Web API\BudgetApplicationView\BudgetApplicationView\obj\
 C:\Users\SD05\Documents\Web API\BudgetApplicationView\BudgetApplicationView\obj\Debug\BudgetApplicationView.csproj.CopyComplete
 C:\Users\SD05\Documents\Web API\BudgetApplicationView\BudgetApplicationView\obj\Debug\BudgetApplicationView.dll
 C:\Users\SD05\Documents\Web API\BudgetApplicationView\BudgetApplicationView\obj\Debug\BudgetApplicationView.pdb
+C:\Users\SD05\Documents\Web API\BudgetApplicationView\BudgetApplicationView\bin\System.Net.Http.Formatting.dll
+C:\Users\SD05\Documents\Web API\BudgetApplicationView\BudgetApplicationView\bin\System.Web.Http.dll
+C:\Users\SD05\Documents\Web API\BudgetApplicationView\BudgetApplicationView\bin\System.Web.Http.WebHost.dll
+C:\Users\SD05\Documents\Web API\BudgetApplicationView\BudgetApplicationView\bin\System.Net.Http.Formatting.xml
+C:\Users\SD05\Documents\Web API\BudgetApplicationView\BudgetApplicationView\bin\System.Web.Http.xml
+C:\Users\SD05\Documents\Web API\BudgetApplicationView\BudgetApplicationView\bin\System.Web.Http.WebHost.xml

@@ -1,0 +1,36 @@
+﻿@model List<BudgetApplicationView.Models.CreateCategoryViewModel>
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Categories</h2>
+<p>Find below the list of categories that you have created</p>
+@if (Model == null || !Model.Any())
+{
+    <p>You haven't created any categories</p>
+}
+else
+{
+    <table>
+        <thead>
+            <tr>
+                Name
+            </tr>
+            
+        </thead>
+        <tbody>
+            @foreach (var category in Model)
+            {
+                <tr>
+                    <td>
+                        @category.Name
+                    </td>
+                    
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+   
+        @*@Html.ActionLink("Create Category", "CreateCategories", "HouseHolds")*@
+  
+
