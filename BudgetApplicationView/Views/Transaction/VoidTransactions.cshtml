@@ -1,0 +1,38 @@
+﻿@model BudgetApplicationView.Models.VoidTransactionViewModel
+@{
+    ViewBag.Title = "Void";
+}
+
+<h2>Void Transaction</h2>
+
+
+@using (Html.BeginForm("VoidTransactions", "Transaction", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+<div class="form-horizontal">
+    <div class="form-group">
+        @Html.LabelFor(model => model.IsVoided, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.IsVoided, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.IsVoided, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Void" class="btn btn-default" />
+        </div>
+    </div>
+    <div>
+        
+        @if (ViewBag.Voided != null)
+        {
+            <p>@ViewBag.Voided</p>
+        }
+    </div>
+</div>
+}
+<div>
+    @*@Html.ActionLink("View All Categories", "ViewCategories", "HouseHolds")*@
+
+</div>
+

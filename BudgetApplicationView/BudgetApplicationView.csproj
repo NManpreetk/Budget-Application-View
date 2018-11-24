@@ -205,9 +205,12 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AccountsController.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HouseHoldsController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\TransactionController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -232,6 +235,7 @@
     <Compile Include="Models\ViewHouseHoldViewModel.cs" />
     <Compile Include="Models\ViewTransactionViewModel.cs" />
     <Compile Include="Models\ViewUsersInHouseHoldViewModel.cs" />
+    <Compile Include="Models\VoidTransactionViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -299,11 +303,13 @@
     <Content Include="Views\HouseHolds\Edit.cshtml" />
     <Content Include="Views\HouseHolds\ViewUsersInHouseHold.cshtml" />
     <Content Include="Views\HouseHolds\Invite.cshtml" />
-    <Content Include="Views\HouseHolds\CreateAccounts.cshtml" />
-    <Content Include="Views\HouseHolds\CreateCategories.cshtml" />
-    <Content Include="Views\HouseHolds\ViewAccounts.cshtml" />
-    <Content Include="Views\HouseHolds\ViewCategories.cshtml" />
-    <Content Include="Views\HouseHolds\CreateTransactions.cshtml" />
+    <Content Include="Views\Accounts\CreateAccounts.cshtml" />
+    <Content Include="Views\Accounts\ViewAccounts.cshtml" />
+    <Content Include="Views\Category\ViewCategories.cshtml" />
+    <Content Include="Views\Category\CreateCategories.cshtml" />
+    <Content Include="Views\Transaction\ViewTransactions.cshtml" />
+    <Content Include="Views\Transaction\CreateTransactions.cshtml" />
+    <Content Include="Views\Transaction\VoidTransactions.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

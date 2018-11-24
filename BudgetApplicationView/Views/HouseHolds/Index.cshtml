@@ -33,8 +33,11 @@ else
                         @Html.ActionLink("Edit", "Edit", new { id = household.Id }) |
                         @Html.ActionLink("View Members", "ViewUsersInHouseHold", new { id = household.Id })|
                         @Html.ActionLink("Invite", "Invite", new { id = household.Id })|
-                        @Html.ActionLink("Categories", "CreateCategories", new { id = household.Id }) |
-                        @Html.ActionLink("Accounts", "CreateAccounts", new { id = household.Id })|
+                        @Html.ActionLink("Categories", "CreateCategories", "Category", new { id = household.Id }, null) |
+                        @Html.ActionLink("View Categories", "ViewCategories", "Category", new { id = household.Id }, null) |
+                        @Html.ActionLink("Accounts", "CreateAccounts", "Accounts", new { id = household.Id }, null)|
+                        @Html.ActionLink("View accounts", "ViewAccounts", "Accounts", new { id = household.Id }, null) |
+                        @Html.ActionLink("Transactions", "CreateTransactions", "Transaction", new { id = household.Id }, null)|
 
                     </td>
                 </tr>

@@ -1,0 +1,72 @@
+﻿@model List<BudgetApplicationView.Models.CreateTransactionsViewModel>
+@{
+    ViewBag.Title = "Create";
+}
+<h2>Transactions</h2>
+<p>Find below the list of transactions that you have created</p>
+@if (Model == null || !Model.Any())
+{
+    <p>You haven't created any transactions</p>
+}
+else
+{
+    <table>
+        <thead>
+            <tr>
+                Amount
+            </tr>
+            <tr>
+                Description
+            </tr>
+            <tr>
+                Date
+            </tr>
+            <tr>
+                CategoryId
+            </tr>
+            <tr>
+                AccountId
+            </tr>
+            <tr>
+                IsVoided
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var transaction in Model)
+            {
+            <tr>
+                <td>
+                    @transaction.Amount
+                </td>
+                <td>
+                    @transaction.Description
+                </td>
+                <td>
+                    @transaction.Date
+                </td>
+                <td>
+                    @transaction.CategoryId
+                </td>
+                <td>
+                    @transaction.AccountId
+                </td>
+                <td>
+                    @transaction.IsVoided
+                </td>
+                <td>
+                    @Html.ActionLink("Void Transaction", "VoidTransactions", "Transaction", new { id = transaction.CategoryId }, null)
+                </td>
+                <td>
+                    @if (ViewBag.Voided != null)
+                    {
+                        <p>@ViewBag.Voided</p>
+                    }
+                </td>
+
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+
+

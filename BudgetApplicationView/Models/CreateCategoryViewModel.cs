@@ -8,6 +8,7 @@ namespace BudgetApplicationView.Models
 {
     public class CreateCategoryViewModel
     {
+        [Required]
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }
